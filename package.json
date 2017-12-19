@@ -1,0 +1,27 @@
+{
+  "name": "restapis",
+  "version": "1.0.0",
+  "description": "it contains all rest apis",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Dilshad Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.30",
+    "morgan": "^1.8.2",
+    "mysql": "^2.15.0",
+    "validator": "^8.0.0",
+    "winston": "^2.4.0",
+    "wait.for": "^0.6.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "github.com/ahmeddilshad/restapis"
+  }
+}
