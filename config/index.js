@@ -1,11 +1,16 @@
 var express = require('express'),
 	router = express.Router(),
-	register = require('../modules/Registration.js')
+	register = require('../modules/client/Registration.js');
+	admin = require('../modules/admin/Admin.js')
 
-router.get ('/welcome', function (req, res) {
+//admin routing can only be accesible by admin
+router.post('/admin/register', admin.addAdmin);
+
+
+router.get('/welcome', function (req, res) {
   res.send('welcome to my world');
 });
 
-router.get ('/register', register.registerNewUser);
+router.post('/registeruser', register.registerNewUser);
 
 module.exports = router;
